@@ -1,13 +1,58 @@
+:root {
+  --primary: #411388;
+  --primary-opacity: #4213887c;
+  --secondary: #d45500;
+  --tertiary: #7a59ab;
+  --dark: #1b1b1b;
+  --light: #fcfbfc;
+  --gradient: -webkit-linear-gradient(right top, #411388, #9964e9);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--gradient);
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/*backgrounds*/
+
+.bg-primary {
+  background: var(--primary);
+}
+
+.bg-secondary {
+  background: var(--secondary);
+}
+
+.bg-dark {
+  background: var(--dark);
+}
+
+.bg-light {
+  background: var(--light);
+}
+
+.bg-gradient {
+  background: var(--gradient);
+}
+
+/*text color*/
+
+.text-light {
+  color: var(--light);
 }
 
 .display_good {

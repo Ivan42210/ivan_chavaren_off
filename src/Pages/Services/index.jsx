@@ -1,16 +1,22 @@
-
-
-
+import CommonBanner from "../../Components/CommonBanner"
 
 
 
 export default function ServicePage({datas}){
+    
 
-    console.log(datas)
+    const srcArray = datas.map(({ id,cover}) =>(
+        {
+            cover: cover,
+            id: id
+        }
+    ))
+    
+
  
     return(
         <section>
-            services:
+            <CommonBanner pageTitle={'Services'} srcs={srcArray} bannerType={'services'}/>
 
         
         </section>
